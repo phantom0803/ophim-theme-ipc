@@ -1,0 +1,283 @@
+body {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+    background-color: #141414;
+}
+
+header.main .hbox,
+#contenedor,
+footer.main .fbox {
+    max-width: 1150px;
+}
+
+a,
+.home-blog-post .entry-date .date,
+.top-imdb-item:hover > .title a,
+.module .content .items .item .data h3 a:hover,
+.head-main-nav ul.main-header li:hover > a,
+.login_box .box a.register {
+    color: #e50914;
+}
+
+.nav_items_module a.btn:hover,
+.pagination span.current,
+.w_item_b a:hover > .data .wextra b:before,
+.comment-respond h3:before,
+footer.main .fbox .fmenu ul li a:hover {
+    color: #e50914;
+}
+
+header.main .hbox .search form button[type="submit"]:hover,
+.loading,
+#seasons .se-c .se-a ul.episodios li .episodiotitle a:hover,
+.sgeneros a:hover,
+.page_user nav.user ul li a:hover {
+    color: #e50914;
+}
+
+footer.main .fbox .fmenu ul li.current-menu-item a,
+.posts .meta .autor i,
+.pag_episodes .item a:hover,
+a.link_a:hover,
+ul.smenu li a:hover {
+    color: #e50914;
+}
+
+header.responsive .nav a.active:before,
+header.responsive .search a.active:before,
+.dtuser a.clicklogin:hover,
+.menuresp .menu ul.resp li a:hover,
+.menuresp .menu ul.resp li ul.sub-menu li a:hover {
+    color: #e50914;
+}
+
+.sl-wrapper a:before,
+table.account_links tbody td a:hover,
+.dt_mainmeta nav.genres ul li a:hover {
+    color: #e50914;
+}
+
+.dt_mainmeta nav.genres ul li.current-cat a:before,
+.dooplay_player .options ul li:hover span.title {
+    color: #e50914;
+}
+
+.head-main-nav ul.main-header li ul.sub-menu li a:hover,
+form.form-resp-ab button[type="submit"]:hover > span,
+.sidebar aside.widget ul li a:hover {
+    color: #e50914;
+}
+
+header.top_imdb h1.top-imdb-h1 span,
+article.post .information .meta span.autor,
+.w_item_c a:hover > .rating i,
+span.comment-author-link,
+.pagination a:hover {
+    color: #e50914;
+}
+
+.letter_home ul.glossary li a:hover,
+.letter_home ul.glossary li a.active,
+.user_control a.in-list {
+    color: #e50914;
+}
+
+.headitems a#dooplay_signout:hover,
+.login_box .box a#c_loginbox:hover {
+    color: #e50914;
+}
+
+.report_modal .box .form form fieldset label:hover > span.title {
+    color: #e50914;
+}
+
+.linktabs ul li a.selected,
+ul.smenu li a.selected,
+a.liked,
+.module .content header span a.see-all,
+.page_user nav.user ul li a.selected,
+.dt_mainmeta nav.releases ul li a:hover {
+    background: #e50914;
+}
+
+a.see_all,
+p.form-submit input[type="submit"]:hover,
+.report-video-form fieldset input[type="submit"],
+a.mtoc,
+.contact .wrapper fieldset input[type="submit"],
+span.item_type,
+a.main {
+    background: #e50914;
+}
+
+.post-comments .comment-reply-link:hover,
+#seasons .se-c .se-q span.se-o,
+#edit_link .box .form_edit .cerrar a:hover {
+    background: #e50914;
+}
+
+.user_edit_control ul li a.selected,
+form.update_profile fieldset input[type="submit"],
+.page_user .content .paged a.load_more:hover,
+#edit_link .box .form_edit fieldset input[type="submit"] {
+    background: #e50914;
+}
+
+.login_box .box input[type="submit"],
+.form_post_lik .control .left a.add_row:hover,
+.form_post_lik .table table tbody tr td a.remove_row:hover,
+.form_post_lik .control .right input[type="submit"] {
+    background: #e50914;
+}
+
+#dt_contenedor {
+    background-color: #141414;
+}
+
+.plyr input[type="range"]::-ms-fill-lower {
+    background: #e50914;
+}
+
+.menuresp .menu .user a.ctgs,
+.menuresp .menu .user .logout a:hover {
+    background: #e50914;
+}
+
+.plyr input[type="range"]:active::-webkit-slider-thumb {
+    background: #e50914;
+}
+
+.plyr input[type="range"]:active::-moz-range-thumb {
+    background: #e50914;
+}
+
+.plyr input[type="range"]:active::-ms-thumb {
+    background: #e50914;
+}
+
+.tagcloud a:hover,
+ul.abc li a:hover,
+ul.abc li a.select {
+    background: #e50914;
+}
+
+.featu {
+    background: #00be08;
+}
+
+.report_modal .box .form form fieldset input[type="submit"] {
+    background-color: #e50914;
+}
+
+.contact .wrapper fieldset input[type="text"]:focus,
+.contact .wrapper fieldset textarea:focus,
+header.main .hbox .dt_user ul li ul li:hover > a,
+.login_box .box a.register {
+    border-color: #e50914;
+}
+
+.module .content header h1 {
+    border-color: #e50914;
+}
+
+.module .content header h2 {
+    border-color: #e50914;
+}
+
+a.see_all {
+    border-color: #e50914;
+}
+
+.top-imdb-list h3 {
+    border-color: #e50914;
+}
+
+.user_edit_control ul li a.selected:before {
+    border-top-color: #e50914;
+}
+
+header.main .loading {
+    color: #fff !important;
+}
+
+.starstruck .star-on-png:before {
+    color: #e50914;
+}
+
+.letter_home {
+    display: none;
+}
+
+.movload {
+    display: none;
+}
+
+.load_modules {
+    display: none;
+}
+
+.module .content .items .item .poster img {
+    height: 100%;
+}
+
+a.button_play {
+    font-size: 14px;
+    background: linear-gradient( 81.43deg , #c11e1b -26.81%, #6f0c0b 87.89%);
+    box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 75%);
+    top: 3px;
+    left: 3px;
+    border-radius: 2px;
+    color: #fbfbfb;
+    padding: 2px 5px;
+    opacity: 0.9;
+}
+
+a.button_play:hover {
+    opacity: 0.6;
+}
+
+.dt_social_single {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 540px){
+    .starstruck-wrap {
+        display: block;
+    }
+    .dt_nodata, .starstruck-wrap .dt_rating_vgs {
+        display: none;
+    }
+    .starstruck-wrap .dt_rating_data {
+        padding: 0 !important;
+    }
+}
+
+#seasons .se-c .se-a ul.episodios {
+    margin-top: 5px;
+}
+
+#seasons .se-c .se-a ul.episodios li.active {
+    opacity: 0.2;
+}
+
+#seasons .se-c .se-a ul.episodios li .episodiotitle a {
+    width: 100%;
+    height: 100%;
+}
+
+.khungepih1 {
+    padding: 5px 3px 5px;
+}
+
+#seasons .se-c span.server_name {
+    font-size: 14px;
+    background: linear-gradient( 81.43deg , #c11e1b -26.81%, #6f0c0b 87.89%);
+    box-shadow: 2px 2px 3px 0px rgb(0 0 0 / 75%);
+    border-radius: 2px;
+    color: #fbfbfb;
+    padding: 2px 5px;
+    opacity: 0.9;
+}
+
