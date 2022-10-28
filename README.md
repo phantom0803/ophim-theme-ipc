@@ -2,16 +2,16 @@
 
 ## Demo
 ### Trang Chủ
-<!-- ![Alt text](https://i.ibb.co/bWkS4Sf/September-Home-Page.png "Home Page") -->
+![Alt text](https://i.ibb.co/0MZCZwh/IPC-INDEX.png "Home Page")
 
 ### Trang Danh Sách Phim
-<!-- ![Alt text](https://i.ibb.co/B2dPj5S/September-Catalog-Page.png "Catalog Page") -->
+![Alt text](https://i.ibb.co/pJ455L9/IPC-CATALOG.png "Catalog Page")
 
 ### Trang Thông Tin Phim
-<!-- ![Alt text](https://i.ibb.co/6r1Z70Y/September-Single-Page.png "Single Page") -->
+![Alt text](https://i.ibb.co/MCVqVfR/IPC-SINGLE.png "Single Page")
 
 ### Trang Xem Phim
-<!-- ![Alt text](https://i.ibb.co/Pxb8m1G/September-Episode-Page.png "Episode Page") -->
+![Alt text](https://i.ibb.co/fGGNgJk/IPC-EPISODE.png "Episode Page")
 
 ## Requirements
 https://github.com/hacoidev/ophim-core
