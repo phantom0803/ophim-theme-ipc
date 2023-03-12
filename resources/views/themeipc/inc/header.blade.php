@@ -72,7 +72,7 @@
         </div>
     </header>
     <div class="search_responsive">
-        <form method="get" id="form-search-resp" class="form-resp-ab" action=""><input type="text"
+        <form method="get" id="form-search-resp" class="form-resp-ab" action="/"><input type="text"
                 placeholder="Tìm kiếm phim..." name="search" value="{{ request('search') }}" autocomplete="off">
             <button type="submit" form="form-search-resp" class="search-button"><span
                     class="fas fa-search"></span></button>
