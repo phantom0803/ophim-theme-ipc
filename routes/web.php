@@ -15,16 +15,40 @@ Route::group([
     ),
 ], function () {
     Route::get('/', [ThemeIpcController::class, 'index']);
-    Route::get(sprintf('/%s/{category}', config('ophim.routes.category', 'the-loai')), [ThemeIpcController::class, 'getMovieOfCategory'])->name('categories.movies.index');
-    Route::get(sprintf('/%s/{actor}', config('ophim.routes.actors', 'dien-vien')), [ThemeIpcController::class, 'getMovieOfActor'])->name('actors.movies.index');
-    Route::get(sprintf('/%s/{director}', config('ophim.routes.directors', 'dao-dien')), [ThemeIpcController::class, 'getMovieOfDirector'])->name('directors.movies.index');
-    Route::get(sprintf('/%s/{tag}', config('ophim.routes.tags', 'tu-khoa')), [ThemeIpcController::class, 'getMovieOfTag'])->name('tags.movies.index');
-    Route::get(sprintf('/%s/{region}', config('ophim.routes.region', 'quoc-gia')), [ThemeIpcController::class, 'getMovieOfRegion'])->name('regions.movies.index');
-    Route::get(sprintf('/%s/{type}', config('ophim.routes.types', 'danh-sach')), [ThemeIpcController::class, 'getMovieOfType'])->name('types.movies.index');
-    Route::get(sprintf('/%s/{movie}', config('ophim.routes.movie', 'phim')), [ThemeIpcController::class, 'getMovieOverview'])->name('movies.show');
-    Route::get(sprintf('/%s/{movie}/{episode}-{id}', config('ophim.routes.movie', 'phim')), [ThemeIpcController::class, 'getEpisode'])
-        ->where(['movie' => '.+', 'episode' => '.+', 'id' => '[0-9]+'])->name('episodes.show');
+
+    Route::get(setting('site_routes_category', '/the-loai/{category}'), [ThemeIpcController::class, 'getMovieOfCategory'])
+        ->where(['category' => '.+', 'id' => '[0-9]+'])
+        ->name('categories.movies.index');
+
+    Route::get(setting('site_routes_region', '/quoc-gia/{region}'), [ThemeIpcController::class, 'getMovieOfRegion'])
+        ->where(['region' => '.+', 'id' => '[0-9]+'])
+        ->name('regions.movies.index');
+
+    Route::get(setting('site_routes_tag', '/tu-khoa/{tag}'), [ThemeIpcController::class, 'getMovieOfTag'])
+        ->where(['tag' => '.+', 'id' => '[0-9]+'])
+        ->name('tags.movies.index');
+
+    Route::get(setting('site_routes_types', '/danh-sach/{type}'), [ThemeIpcController::class, 'getMovieOfType'])
+        ->where(['type' => '.+', 'id' => '[0-9]+'])
+        ->name('types.movies.index');
+
+    Route::get(setting('site_routes_actors', '/dien-vien/{actor}'), [ThemeIpcController::class, 'getMovieOfActor'])
+        ->where(['actor' => '.+', 'id' => '[0-9]+'])
+        ->name('actors.movies.index');
+
+    Route::get(setting('site_routes_directors', '/dao-dien/{director}'), [ThemeIpcController::class, 'getMovieOfDirector'])
+        ->where(['director' => '.+', 'id' => '[0-9]+'])
+        ->name('directors.movies.index');
+
+    Route::get(setting('site_routes_episode', '/phim/{movie}/{episode}-{id}'), [ThemeIpcController::class, 'getEpisode'])
+        ->where(['movie' => '.+', 'movie_id' => '[0-9]+', 'episode' => '.+', 'id' => '[0-9]+'])
+        ->name('episodes.show');
+
     Route::post(sprintf('/%s/{movie}/{episode}-{id}/report', config('ophim.routes.movie', 'phim')), [ThemeIpcController::class, 'reportEpisode'])
         ->where(['movie' => '.+', 'episode' => '.+', 'id' => '[0-9]+'])->name('episodes.report');
     Route::post(sprintf('/%s/{movie}/rate', config('ophim.routes.movie', 'phim')), [ThemeIpcController::class, 'rateMovie'])->name('movie.rating');
+
+    Route::get(setting('site_routes_movie', '/phim/{movie}'), [ThemeIpcController::class, 'getMovieOverview'])
+        ->where(['movie' => '.+', 'id' => '[0-9]+'])
+        ->name('movies.show');
 });

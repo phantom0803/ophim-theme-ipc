@@ -97,7 +97,7 @@
                         onclick='window.open("https://twitter.com/intent/tweet?text={{ $currentMovie->name }}&url={{ $currentMovie->getUrl() }}","twitter","toolbar=0, status=0, width=650, height=450")'
                         data-rurl='{{ $currentMovie->getUrl() }}' class='twitter dt_social'><b>Twitter</b></a><a
                         data-id='{{ $currentMovie->id }}' rel='nofollow' href='javascript: void(0);'
-                        onclick='window.open("https://pinterest.com/pin/create/button/?url={{ $currentMovie->getUrl() }}&media={{ $currentMovie->poster_url ?? $currentMovie->thumb_url }}&description={{ $currentMovie->name }}","pinterest","toolbar=0, status=0, width=650, height=450")'
+                        onclick='window.open("https://pinterest.com/pin/create/button/?url={{ $currentMovie->getUrl() }}&media={{ $currentMovie->getPosterUrl() }}&description={{ $currentMovie->name }}","pinterest","toolbar=0, status=0, width=650, height=450")'
                         class='pinterest dt_social'><b>Pinterest</b></a><a data-id='{{ $currentMovie->id }}' rel='nofollow'
                         href='whatsapp://send?text={{ $currentMovie->name }}%20-%20{{ $currentMovie->getUrl() }}'
                         class='whatsapp dt_social'><b>WhatsApp</b></a>
@@ -256,7 +256,7 @@
                     key: "{{ Setting::get('jwplayer_license') }}",
                     aspectratio: "16:9",
                     width: "100%",
-                    image: "{{ $currentMovie->poster_url ?: $currentMovie->thumb_url }}",
+                    image: "{{ $currentMovie->getPosterUrl() }}",
                     file: link,
                     playbackRateControls: true,
                     playbackRates: [0.25, 0.75, 1, 1.25],

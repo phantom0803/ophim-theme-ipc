@@ -8,7 +8,8 @@
                         <article class="w_item_b">
                             <a title="{{$movie->name}}" href="{{$movie->getUrl()}}">
                                 <div class="image"><img
-                                        src="{{$movie->thumb_url}}"
+                                        class="lazyload"
+                                        data-src="{{$movie->getThumbUrl()}}"
                                         alt="{{$movie->name}}" /></div>
                                 <div class="data">
                                     <h3>{{$movie->name}}</h3><span class="wdate">{{$movie->origin_name}}</span><span

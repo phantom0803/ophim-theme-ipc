@@ -1,5 +1,5 @@
 <article id="post-{{ $movie->id }}" class="item tvshows">
-    <div class="poster"><img src="{{ $movie->thumb_url }}" alt="{{ $movie->name }}">
+    <div class="poster"><img class="lazyload" data-src="{{ $movie->getThumbUrl() }}" alt="{{ $movie->name }}">
         <span class='ribbon'>
             <i class='fa fa-play-circle' aria-hidden='true'></i> {{ $movie->episode_current }}
         </span>
