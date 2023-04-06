@@ -123,23 +123,15 @@
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                        <a itemprop="item" title="{{ $currentMovie->type == 'single' ? 'Phim lẻ' : 'Phim bộ' }}"
-                            href="/danh-sach/{{ $currentMovie->type == 'single' ? 'phim-le' : 'phim-bo' }}">
-                            <span itemprop="name">{{ $currentMovie->type == 'single' ? 'Phim lẻ' : 'Phim bộ' }}</span>
+                        <a itemprop="item" title="{{ $currentMovie->name }}" href="{{ $currentMovie->getUrl() }}">
+                            <span itemprop="name">{{ $currentMovie->name }}</span>
                         </a>
                         <span class="fas fa-angle-right" itemprop="position" content="2"></span>
                     </li>
 
-                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                        <a itemprop="item" title="{{ $currentMovie->name }}" href="{{ $currentMovie->getUrl() }}">
-                            <span itemprop="name">{{ $currentMovie->name }}</span>
-                        </a>
-                        <span class="fas fa-angle-right" itemprop="position" content="3"></span>
-                    </li>
-
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span
                             itemprop="name">Tập {{ $episode->name }}</span><span itemprop="position"
-                            content="4"></span></li>
+                            content="3"></span></li>
                 </ol>
 
             </div>
