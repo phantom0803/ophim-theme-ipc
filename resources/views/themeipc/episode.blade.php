@@ -33,8 +33,8 @@
                     <div>
                         <span class="hidden" itemprop="aggregateRating" itemscope
                             itemtype="http://schema.org/AggregateRating">
-                            <meta itemprop="ratingValue" content={{ number_format($currentMovie->rating_star ?? 0, 1) }} />
-                            <meta itemprop="ratingcount" content="{{ $currentMovie->rating_count ?? 0 }}">
+                            <meta itemprop="ratingValue" content="{{$currentMovie->getRatingStar()}}" />
+                            <meta itemprop="ratingcount" content="{{$currentMovie->getRatingCount()}}">
                             <meta itemprop="bestRating" content="10" />
                             <meta itemprop="worstRating" content="1" />
                         </span>
@@ -42,7 +42,7 @@
                         <div class="starstruck-wrap">
                             <div class="dt_rating_data">
                                 <div class="starstruck starstruck-main">
-                                    <div id="star" data-score="{{ number_format($currentMovie->rating_star ?? 0, 1) }}"
+                                    <div id="star" data-score="{{$currentMovie->getRatingStar()}}"
                                         style="cursor: pointer;"></div>
                                 </div>
 
@@ -52,9 +52,9 @@
 
                                 <div class="starstruck-rating">
                                     <span
-                                        class="dt_rating_vgs">{{ number_format($currentMovie->rating_star ?? 0, 1) }}</span><i
+                                        class="dt_rating_vgs">{{$currentMovie->getRatingStar()}}</span><i
                                         class="fas fa-user-circle"></i>
-                                    <span class="rating-count">{{ $currentMovie->rating_count ?? 0 }}</span>
+                                    <span class="rating-count">{{$currentMovie->getRatingCount()}}</span>
                                     <span class="rating-text">đánh giá</span>
                                 </div>
                             </div>
